@@ -1,0 +1,80 @@
+<!doctype html>
+
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>JULES(Game Shop)</title>
+		<meta name="description" content="Web Shop for Video Games" />
+			<link rel="stylesheet" href="assets/css/style.css" />
+			<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+	</head>
+
+
+
+	<body>
+
+		<div class="site-wrapper">
+			<header class="site-header">
+				<div class="container">
+					
+					<div class="top-title">
+						<img src="./logo/logo.png" alt="Site logo" class="site-logo">
+						<span class="brand">JULES</span>
+						<div class="web">Video Game Shop</div>
+					</div>
+				</div>
+				<div class="container header-inner">
+					<div class="brand-group" aria-hidden="true" style="display:none;">
+						<h1 class="brand">JULES</h1>
+						<img src="logo/logo.png" alt="logo" style="float:left;width:42px;height:42px;">
+						<div class="web">Video Game Shop</div>
+					</div>
+					<div class="header-actions">
+						<nav class="main-nav" aria-label="Primary">
+							<button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">Menu</button>
+							<ul id="primary-menu" class="nav-list">
+								<li><a href="#">Home</a></li>
+								<li class="has-submenu">
+									<button class="submenu-toggle" aria-expanded="false" aria-controls="games-submenu">Games</button>
+									<ul id="games-submenu" class="submenu" role="menu">
+										<li role="none"><a role="menuitem" href="#pcgames">PC Games</a></li>
+										<li role="none"><a role="menuitem" href="#ps5games">PS5 Games</a></li>
+										<li role="none"><a role="menuitem" href="#ps4games">PS4 Games</a></li>
+										<li role="none"><a role="menuitem" href="#nintendogames">Nintendo Games</a></li>
+										<li role="none"><a role="menuitem" href="#othergames">Other Games</a></li>
+									</ul>
+								</li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</nav>
+
+
+
+						
+						<form id="product-search-form" class="search-form" role="search" aria-label="Search products">
+							<label for="product-search-input" class="sr-only">Search products</label>
+							<input id="product-search-input" name="q" class="search-input" type="search" placeholder="Search products..." />
+							<button type="submit" class="search-button" aria-label="Search">Search</button>
+						</form>
+					</div>
+				</div>
+			</header>
+
+
+
+			<footer class="site-footer">
+				<div class="container">
+					<p>&copy; <span id="year">2025</span> Julia Penić — Projektni Zadatak</p>
+				</div>
+			</footer>
+		</div>
+
+
+		
+		<script src="assets/js/main.js" defer></script>
+	</body>
+</html>

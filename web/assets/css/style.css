@@ -1,0 +1,72 @@
+/* Layout: center the whole page content (site-wrapper) both horizontally and vertically
+	 and give it a responsive max-width and min-height so it fills blank space nicely.
+	 This is intentionally minimal so you can style further later. */
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #f3f4f6; /* subtle neutral background */
+	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding: 1rem;
+	box-sizing: border-box;
+}
+
+.site-wrapper {
+	width: min(1100px, 98%);
+	min-height: 70vh; /* fill most of the viewport vertically */
+	background: #ffffff;
+	border-radius: 12px;
+	box-shadow: 0 12px 40px rgba(2,6,23,0.08);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 1rem 1.25rem;
+}
+
+/* Logo and title styling */
+.top-title{ text-align:center; padding:1rem 0; }
+.site-logo{ width:64px; height:64px; vertical-align:middle; margin-right:0.6rem; display:inline-block }
+.top-title .web{ font-size:0.95rem; color:#6b7280; margin-top:0.25rem }
+
+/* Brand: Poppins with two-color gradient text */
+.brand{
+	font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	font-weight:800;
+	font-size:2.5rem;
+	display:inline-block;
+	vertical-align:middle;
+	background: linear-gradient(90deg, #2563eb 0%, #f43f5e 100%);
+		background-clip: text;
+		-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+/* Let the main content expand so footer stays toward the bottom */
+.site-main {
+	flex: 1 1 auto;
+}
+
+.site-footer {
+	text-align: center;
+	padding: 0.75rem 0;
+	color: #6b7280;
+}
+
+@media (max-width: 720px) {
+	.site-wrapper { padding: 0.75rem; min-height: 60vh; }
+	.top-title img { width:48px;height:48px }
+	.top-title .brand { font-size: clamp(1.5rem, 6vw, 2rem); }
+}
+
+
+
