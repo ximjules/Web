@@ -1,72 +1,97 @@
-/* Layout: center the whole page content (site-wrapper) both horizontally and vertically
-	 and give it a responsive max-width and min-height so it fills blank space nicely.
-	 This is intentionally minimal so you can style further later. */
-
-html, body {
-	height: 100%;
+/* GLOBAL STYLES */
+* {
 	margin: 0;
-}
-
-body {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: #f3f4f6; /* subtle neutral background */
-	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	padding: 1rem;
+	padding: 0;
 	box-sizing: border-box;
-}
-
-.site-wrapper {
-	width: min(1100px, 98%);
-	min-height: 70vh; /* fill most of the viewport vertically */
-	background: #ffffff;
-	border-radius: 12px;
-	box-shadow: 0 12px 40px rgba(2,6,23,0.08);
-	overflow: hidden;
+	font-family: 'Orbitron', sans-serif;
+	}
+	
+	
+	body {
+	background-color: #0b0c10;
+	color: #c5c6c7;
+	font-size: 18px;
+	line-height: 1.6;
+	}
+	
+	
+	a { text-decoration: none; color: #00fff7; }
+	
+	
+	header {
 	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-	padding: 1rem 1.25rem;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px 60px;
+	background: #1f2833;
+	border-bottom: 2px solid #45a29e;
+	}
+	
+	
+	header .logo img { height: 50px; }
+	nav ul { display: flex; list-style: none; gap: 25px; }
+	nav a:hover { color: #66fcf1; transition: 0.3s; }
+
+/* HERO SECTION */
+.hero-btn {
+margin-top: 20px;
+padding: 15px 30px;
+background: linear-gradient(45deg,#45a29e,#66fcf1);
+border: none;
+cursor: pointer;
+font-size: 20px;
+border-radius: 10px;
+transition: all 0.3s ease;
 }
-
-/* Logo and title styling */
-.top-title{ text-align:center; padding:1rem 0; }
-.site-logo{ width:64px; height:64px; vertical-align:middle; margin-right:0.6rem; display:inline-block }
-.top-title .web{ font-size:0.95rem; color:#6b7280; margin-top:0.25rem }
-
-/* Brand: Poppins with two-color gradient text */
-.brand{
-	font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-	font-weight:800;
-	font-size:2.5rem;
-	display:inline-block;
-	vertical-align:middle;
-	background: linear-gradient(90deg, #2563eb 0%, #f43f5e 100%);
-		background-clip: text;
-		-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-
-/* Let the main content expand so footer stays toward the bottom */
-.site-main {
-	flex: 1 1 auto;
-}
-
-.site-footer {
-	text-align: center;
-	padding: 0.75rem 0;
-	color: #6b7280;
-}
-
-@media (max-width: 720px) {
-	.site-wrapper { padding: 0.75rem; min-height: 60vh; }
-	.top-title img { width:48px;height:48px }
-	.top-title .brand { font-size: clamp(1.5rem, 6vw, 2rem); }
+.hero-btn:hover {
+transform: scale(1.1);
+box-shadow: 0 0 15px #66fcf1;
 }
 
 
+.products {
+padding: 80px;
+text-align: center;
+}
+.product-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+gap: 25px;
+}
+.product-card {
+background: #1f2833;
+padding: 30px;
+border-radius: 14px;
+border: 1px solid #45a29e;
+transition: 0.3s;
+}
+.product-card:hover {
+transform: scale(1.05);
+box-shadow: 0 0 15px #45a29e;
+}
 
+
+/* AUTH FORMS */
+.auth { padding: 60px; text-align: center; }
+.auth-forms { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+.auth-forms form { background: #1f2833; padding: 30px; border-radius: 12px; border: 1px solid #45a29e; display: flex; flex-direction: column; gap: 15px; }
+.auth-forms input, .auth-forms button { padding: 12px; border-radius: 8px; border: none; font-size: 16px; }
+.auth-forms button { background: #66fcf1; cursor: pointer; transition: 0.3s; }
+.auth-forms button:hover { transform: scale(1.05); box-shadow: 0 0 10px #66fcf1; }
+
+
+/* CART */
+.cart { padding: 60px; text-align: center; }
+#checkoutBtn { background: #45a29e; color: #fff; padding: 15px 25px; border-radius: 10px; cursor: pointer; transition: 0.3s; }
+#checkoutBtn:hover { transform: scale(1.05); box-shadow: 0 0 10px #45a29e; }
+
+
+/* FOOTER */
+footer { text-align: center; padding: 20px; background: #1f2833; border-top: 1px solid #45a29e; }
+
+
+/* RESPONSIVE */
+@media (max-width:768px){
+header, .products, .auth, .cart { padding: 40px 20px; }
+.auth-forms { flex-direction: column; }
+}
