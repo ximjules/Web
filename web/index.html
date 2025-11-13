@@ -1,77 +1,67 @@
 <!DOCTYPE html>
-<div class="logo">
-<img src="logo/logo.png" alt="Site Logo" />
-<h1>Gaming Web Shop</h1>
-</div>
-
-
-<nav>
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#products">Products</a></li>
-<li><a href="#cart">Cart</a></li>
-<li><a href="#login">Login/Register</a></li>
-</ul>
-</nav>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaming Web Shop</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="logo/yourlogo.png" alt="Logo">
+        <h1>Gaming Web Shop</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#cart">Cart</a></li>
+            <li><a href="#login">Login/Register</a></li>
+        </ul>
+    </nav>
 </header>
 
-
-<!-- HERO SECTION -->
 <section class="hero" id="home">
-<h2>Welcome to the Ultimate Gaming Store</h2>
-<p>Your one-stop shop for games, accessories, and gear.</p>
-<button class="hero-btn">Shop Now</button>
+    <h2>Welcome to the Ultimate Gaming Store</h2>
+    <p>Your one-stop shop for games, accessories, and gear.</p>
+    <button class="hero-btn">Shop Now</button>
 </section>
 
-
-<!-- PRODUCT GRID -->
 <section class="products" id="products">
-<h2>Featured Products</h2>
-<div class="product-grid" id="productGrid">
-<!-- Products added dynamically later using JS or PHP -->
-</div>
+    <h2>Featured Products</h2>
+    <div class="product-grid" id="productGrid"></div>
 </section>
 
-
-<!-- LOGIN/REGISTER SECTION -->
 <section class="auth" id="login">
-<h2>Login / Register</h2>
-<div class="auth-forms">
-<form id="loginForm">
-<input type="text" placeholder="Username" required />
-<input type="password" placeholder="Password" required />
-<button type="submit">Login</button>
-</form>
-
-
-<form id="registerForm">
-<input type="text" placeholder="Username" required />
-<input type="email" placeholder="Email" required />
-<input type="password" placeholder="Password" required />
-<button type="submit">Register</button>
-</form>
-</div>
+    <h2>Login / Register</h2>
+    <div class="auth-forms">
+        <form id="loginForm">
+            <input type="text" placeholder="Username" required />
+            <input type="password" placeholder="Password" required />
+            <button type="submit">Login</button>
+        </form>
+        <form id="registerForm">
+            <input type="text" placeholder="Username" required />
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <button type="submit">Register</button>
+        </form>
+    </div>
 </section>
 
-
-<!-- SHOPPING CART SECTION -->
 <section class="cart" id="cart">
-<h2>Your Cart</h2>
-<div id="cartItems">
-<!-- Cart items will be loaded here dynamically -->
-</div>
-<p id="cartTotal">Total: 0€</p>
-<button id="checkoutBtn">Checkout</button>
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <p id="cartTotal">Total: 0€</p>
+    <button id="checkoutBtn">Checkout</button>
 </section>
 
-
-<!-- FOOTER -->
 <footer>
-<p>© 2025 Gaming Web Shop</p>
+    <p>© 2025 Gaming Web Shop</p>
 </footer>
 
-
-<!-- JavaScript -->
-<script src="assets/main.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
