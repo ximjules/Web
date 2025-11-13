@@ -1,2 +1,1 @@
-# Web
-Web-LV
+ZAVRSNI PROJEKT - WEB SHOP
