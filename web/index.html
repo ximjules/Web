@@ -19,11 +19,9 @@
 		<div class="site-wrapper">
 			<header class="site-header">
 				<div class="container">
-					
-					<div class="top-title">
-						<img src="./logo/logo.png" alt="Site logo" class="site-logo">
-						<span class="brand">JULES</span>
-						<div class="web">Video Game Shop</div>
+					<div class="top-title" style="display: flex; align-items: center; justify-content: center;">
+						<img src="./logo/logo.png" alt="Site logo" class="site-logo" style="margin-right: 10px;">
+						<span class="brand" style="font-size: 2rem; font-weight: bold;">JULES</span>
 					</div>
 				</div>
 				<div class="container header-inner">
@@ -35,9 +33,9 @@
 					<div class="header-actions">
 						<nav class="main-nav" aria-label="Primary">
 							<button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">Menu</button>
-							<ul id="primary-menu" class="nav-list">
-								<li><a href="#">Home</a></li>
-								<li class="has-submenu">
+							<ul id="primary-menu" class="nav-list" role="menubar">
+								<li role="none"><a role="menuitem" href="#">Home</a></li>
+								<li role="none" class="has-submenu">
 									<button class="submenu-toggle" aria-expanded="false" aria-controls="games-submenu">Games</button>
 									<ul id="games-submenu" class="submenu" role="menu">
 										<li role="none"><a role="menuitem" href="#pcgames">PC Games</a></li>
@@ -47,8 +45,9 @@
 										<li role="none"><a role="menuitem" href="#othergames">Other Games</a></li>
 									</ul>
 								</li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Contact</a></li>
+								
+								<li role="none"><a role="menuitem" href="#about">About</a></li>
+								<li role="none"><a role="menuitem" href="#contact">Contact</a></li>
 							</ul>
 						</nav>
 
@@ -64,7 +63,38 @@
 				</div>
 			</header>
 
+			<main class="site-main">
+				<section class="hero">
+					<div class="container">
+						<h1>Welcome to JULES Game Shop</h1>
+						<p>Find the best games for PC, PS5, PS4, Nintendo, and more!</p>
+					</div>
+				</section>
 
+				<section class="product-listing">
+					<div class="container">
+						<h2>Featured Games</h2>
+						<div class="product-grid">
+							<!-- Add product cards dynamically here -->
+							<div class="product-card">
+								<img src="assets/images/sample-game.jpg" alt="Sample Game">
+								<h3>Game Title</h3>
+								<p>$59.99</p>
+								<button class="add-to-cart">Add to Cart</button>
+							</div>
+							<!-- Repeat product cards as needed -->
+						</div>
+					</div>
+				</section>
+
+				<section class="shopping-cart">
+					<div class="container">
+						<h2>Your Cart</h2>
+						<p>Your cart is empty.</p>
+						<!-- Add cart items dynamically here -->
+					</div>
+				</section>
+			</main>
 
 			<footer class="site-footer">
 				<div class="container">
