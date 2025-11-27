@@ -1,9 +1,6 @@
 /* ==========================
    GLOBAL STYLES
-   Ovo su osnovne postavke za cijelu stranicu
    ========================== */
-
-   
    * {
     margin: 0;
     padding: 0;
@@ -12,53 +9,40 @@
   }
   
   html, body {
-    scroll-behavior: smooth; /* omogucava smooth skrolanje na sekcije */
+    scroll-behavior: smooth;
     background-color: #ffffff;
   }
-  
+
+
 
 
 
 
   
   /* ==========================
-     HERO SECTION (gornji dio stranice)
-     - ima futuristični gradient (#2C3531 -> #116466)
-     - fullscreen visina da omoguci skrolanje
+     HERO SECTION
      ========================== */
-  
   .hero {
-    height: 100vh; /* ekran punom visinom */
-    background: linear-gradient(180deg, #313a36 0%, #116466 100%);
+    height: 100vh;
+    background: linear-gradient(180deg, #2C3531 0%, #116466 100%);
     color: white;
     display: flex;
     flex-direction: column;
   }
   
-
-
-
-
-
-  
-  /* ==========================
-     NAVBAR (navigacija na vrhu)
-     ========================== */
-  
   .navbar {
     width: 100%;
     padding: 20px 40px;
     display: flex;
-    justify-content: space-between; /* logo lijevo, linkovi desno */
+    justify-content: space-between;
     align-items: center;
-    gap: 20px; /* da se sve ne zgrči */
+    gap: 20px;
   }
-
-
+  
   .logo {
     display: flex;
     align-items: center;
-    gap: 10px; /* prostor između slike i teksta */
+    gap: 10px;
   }
   
   .logo img {
@@ -69,28 +53,8 @@
   .logo-text {
     font-size: 28px;
     font-weight: bold;
-    color: white; /* ili boja koja ti odgovara */
+    color: white;
   }
-  
-  
-
-  /* SEARCH BAR */
-.search-bar {
-    padding: 8px 15px;
-    font-size: 16px;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-    width: 200px;
-    transition: 0.3s ease;
-  }
-  
-  .search-bar:focus {
-    width: 260px;
-    background-color: #ffffff;
-  }
-  
-  
   
   .nav-links {
     list-style: none;
@@ -109,17 +73,23 @@
     opacity: 0.7;
   }
   
+  .search-bar {
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 200px;
+    transition: 0.3s ease;
+  }
   
-
-
-
-
-  /* ==========================
-     HERO CONTENT (tekst u sredini hero sekcije)
-     ========================== */
+  .search-bar:focus {
+    width: 260px;
+    background-color: #ffffff;
+  }
   
   .hero-content {
-    flex: 1; /* gura sadržaj prema sredini */
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,7 +109,6 @@
     max-width: 600px;
   }
   
-  /* CTA BUTTON (Explore button) */
   .cta-btn {
     padding: 12px 30px;
     background-color: #ffffff;
@@ -154,56 +123,31 @@
   .cta-btn:hover {
     background-color: #e0e0e0;
   }
+
+
+
+
+
   
-  
-
-
-
-
-
   /* ==========================
-     PONUDA SECTION (druga sekcija sa ponudom proizvoda)
+     PONUDA SECTION
      ========================== */
-  
   .ponuda-section {
-    background: linear-gradient(180deg, #116466 0%, #313a36 100%);
     padding: 80px 40px;
+    background: linear-gradient(180deg, #116466 0%, #2C3531 100%);
     text-align: center;
   }
   
   .ponuda-section h2 {
     font-size: 36px;
     margin-bottom: 40px;
-    color: #313a36; /* boja naslova u ponudama */
   }
-
-
-
-
   
-  /* GRID ZA PROIZVODE */
   .ponuda-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
   }
-
-
-  .product-img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .price {
-    font-size: 18px;
-    color: #313a36; /* boja cijene u ponudama */
-    font-weight: bold;
-    margin-top: 5px;
-  }
-  
   
   .ponuda-card {
     padding: 40px;
@@ -217,6 +161,114 @@
   .ponuda-card:hover {
     background-color: #dedede;
     transform: translateY(-5px);
+  }
+  
+  .product-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 18px;
+    color: #8b1e3f;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+
+
+
+
+
+  /* ==========================
+     FORM SECTION (Login / Register)
+     ========================== */
+  .form-section {
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, #116466 0%, #ffffff 100%);
+    min-height: 70vh;
+  }
+  
+  .form-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #2C3531;
+  }
+  
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 15px;
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .auth-form label {
+    font-weight: bold;
+    color: #116466;
+  }
+  
+  .auth-form input {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .auth-form .cta-btn {
+    margin-top: 10px;
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #116466;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .auth-form .cta-btn:hover {
+    background-color: #0d4c4e;
+  }
+
+
+/* NAVBAR LINKOVI ZA LOGIN/REGISTER SA SVJETLOM POZADINOM */
+body > .navbar {
+    background-color: #116466; /* tamnija boja da linkovi budu vidljivi */
+    padding: 20px 40px;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  body > .navbar .nav-links a {
+    color: white; /* sada će biti vidljivo na tamnoj pozadini */
+  }
+  
+  
+
+
+
+
+
+  
+  /* ==========================
+     FOOTER
+     ========================== */
+  .footer {
+    background-color: #2C3531;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
   }
   
 
