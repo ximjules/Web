@@ -50,6 +50,7 @@
     display: flex;
     justify-content: space-between; /* logo lijevo, linkovi desno */
     align-items: center;
+    gap: 20px; /* da se sve ne zgrči */
   }
   
   .logo {
@@ -57,6 +58,24 @@
     font-weight: bold;
     align-items: center;
   }
+
+  /* SEARCH BAR */
+.search-bar {
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 200px;
+    transition: 0.3s ease;
+  }
+  
+  .search-bar:focus {
+    width: 260px;
+    background-color: #ffffff;
+  }
+  
+  
   
   .nav-links {
     list-style: none;
