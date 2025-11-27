@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Nexus Game Shop</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+
+<body>
+
+
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Nexus">
+      <span class="logo-text">Nexus</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+
+
+
+
+  <!-- REGISTER FORM SECTION -->
+  <section class="form-section">
+    <h2>Register</h2>
+    <form action="register.php" method="POST" class="auth-form">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Choose a username" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+      <button type="submit" class="cta-btn">Register</button>
+    </form>
+  </section>
+
+
+
+</body>
+
+</html>
