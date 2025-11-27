@@ -1,0 +1,204 @@
+/* ==========================
+   GLOBAL STYLES
+   Ovo su osnovne postavke za cijelu stranicu
+   ========================== */
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  html, body {
+    scroll-behavior: smooth; /* omogucava smooth skrolanje na sekcije */
+    background-color: #ffffff;
+  }
+  
+
+
+
+
+  
+  /* ==========================
+     HERO SECTION (gornji dio stranice)
+     - ima futuristični gradient (#2C3531 -> #116466)
+     - fullscreen visina da omoguci skrolanje
+     ========================== */
+  
+  .hero {
+    height: 100vh; /* ekran punom visinom */
+    background: linear-gradient(180deg, #313a36 0%, #116466 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+
+
+
+
+  
+  /* ==========================
+     NAVBAR (navigacija na vrhu)
+     ========================== */
+  
+  .navbar {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between; /* logo lijevo, linkovi desno */
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.2s;
+  }
+  
+  .nav-links a:hover {
+    opacity: 0.7;
+  }
+  
+  
+
+
+
+
+  /* ==========================
+     HERO CONTENT (tekst u sredini hero sekcije)
+     ========================== */
+  
+  .hero-content {
+    flex: 1; /* gura sadržaj prema sredini */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    max-width: 600px;
+  }
+  
+  /* CTA BUTTON (Explore button) */
+  .cta-btn {
+    padding: 12px 30px;
+    background-color: #ffffff;
+    color: #116466;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.2s;
+  }
+  
+  .cta-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  
+
+
+
+
+
+  /* ==========================
+     PONUDA SECTION (druga sekcija sa ponudom proizvoda)
+     ========================== */
+  
+  .ponuda-section {
+    background: linear-gradient(180deg, #116466 0%, #85a39c 100%);
+    padding: 80px 40px;
+    text-align: center;
+  }
+  
+  .ponuda-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+
+
+
+  
+  /* GRID ZA PROIZVODE */
+  .ponuda-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+
+  .product-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 18px;
+    color: #7a5d66; /* boja cijene u ponudama */
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  
+  .ponuda-card {
+    padding: 40px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.2s;
+  }
+  
+  .ponuda-card:hover {
+    background-color: #dedede;
+    transform: translateY(-5px);
+  }
+  
+
+
+
+
+
+  
+  /* ==========================
+     FOOTER
+     ========================== */
+  
+  .footer {
+    background-color: #3d4743;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
