@@ -53,12 +53,26 @@
     align-items: center;
     gap: 20px; /* da se sve ne zgrči */
   }
-  
+
+
   .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* prostor između slike i teksta */
+  }
+  
+  .logo img {
+    height: 50px;
+    width: auto;
+  }
+  
+  .logo-text {
     font-size: 28px;
     font-weight: bold;
-    align-items: center;
+    color: white; /* ili boja koja ti odgovara */
   }
+  
+  
 
   /* SEARCH BAR */
 .search-bar {
