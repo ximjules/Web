@@ -141,6 +141,7 @@
   .ponuda-section h2 {
     font-size: 36px;
     margin-bottom: 40px;
+    color: #2C3531;
   }
   
   .ponuda-grid {
@@ -173,7 +174,7 @@
   
   .price {
     font-size: 18px;
-    color: #8b1e3f;
+    color: #2C3531;
     font-weight: bold;
     margin-top: 5px;
   }
