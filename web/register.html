@@ -34,20 +34,24 @@
   <!-- REGISTER FORM SECTION -->
   <section class="form-section">
     <h2>Register</h2>
-    <form action="register.php" method="POST" class="auth-form">
+    <form class="auth-form" onsubmit="registerUser(event)">
       <label for="username">Username:</label>
-      <input type="text" id="username" name="username" placeholder="Choose a username" required>
+      <input type="text" id="username" placeholder="Choose a username" required>
 
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <input type="email" id="email" placeholder="Enter your email" required>
 
       <label for="password">Password:</label>
-      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      <input type="password" id="password" placeholder="Enter your password" required>
 
       <label for="confirm-password">Confirm Password:</label>
-      <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+      <input type="password" id="confirm-password" placeholder="Confirm your password" required>
 
       <button type="submit" class="cta-btn">Register</button>
+    </form>
+  </section>
+
+  <script src="js/auth.js"></script>
     </form>
   </section>
 
